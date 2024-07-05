@@ -1,0 +1,10 @@
+<nav>
+    <a routerLink="" alt="Link to Home Page">HOME</a>
+    <a routerLink="departments" alt="Link to Departments Page">DEPARTMENTS</a>
+
+    <ng-container *ngIf="departmentName">
+        <span>Favorite Department: {{ departmentName }}</span>
+    </ng-container>
+
+</nav>
+

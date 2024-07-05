@@ -1,0 +1,19 @@
+<article>
+  
+  <h3>{{ department.departmentName }}</h3>
+  <h4>Department ID: {{ department.departmentId }}</h4>
+  <h5>Employees:</h5>
+  
+    <ul>
+        <li *ngFor="let employee of department.employees">
+            {{ employee.employeeFirstname }} {{ employee.employeeLastname }}
+        </li>
+    </ul>
+
+  
+  <button (click)="sendFavoriteDepartment()">FAVORITE</button>
+  <button (click)="deleteThisDepartment()">DELETE</button>
+  <button (click)="editDepartment()">EDIT</button>
+</article>
+
+

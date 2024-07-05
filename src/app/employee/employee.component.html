@@ -1,0 +1,24 @@
+<form (ngSubmit)="createEmployee()">
+    <label for="firstName">First Name:</label>
+    <input id="firstName" [(ngModel)]="employee.employeeFirstname" name="firstName" required>
+  
+    <label for="lastName">Last Name:</label>
+    <input id="lastName" [(ngModel)]="employee.employeeLastname" name="lastName" required>
+  
+    <label for="departmentId">Department ID:</label>
+    <input id="departmentId" [(ngModel)]="employee.department.departmentId" name="departmentId" required>
+  
+    <label for="employeeAge">Employee Age:</label>
+    <input id="employeeAge" [(ngModel)]="employee.employeeAge" name="employeeAge" required>
+  
+    <label for="detailText">Detail Text:</label>
+    <textarea id="detailText" [(ngModel)]="employee.detail.detailText" name="detailText" required></textarea>
+  
+    <label for="certifications">Certifications:</label>
+    <select id="certifications" [(ngModel)]="employee.certifications" name="certifications" multiple required>
+      <option *ngFor="let cert of employee.certifications" [ngValue]="cert">{{ cert.certificationName }}</option>
+    </select>
+  
+    <button type="submit">Add Employee</button>
+  </form>
+  

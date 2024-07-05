@@ -40,3 +40,29 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Logs
+logs
+*.log
+
+# Node modules
+node_modules/
+
+# Angular build output
+dist/
+
+# Temporary files
+*.swp
+.DS_Store
+Thumbs.db
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+
+# Maven build output
+target/
+
+# Environment variables
+.env
+
